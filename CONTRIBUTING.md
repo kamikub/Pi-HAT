@@ -12,8 +12,9 @@ email, or any other method with the owners of this repository before making a ch
 
 1. Directories and files are clearly labeled indicating what they are.
 2. When opening the KiCad schematic and PCB you might need to re-add schematic symbols and footptints. The relavant files will be found in the directory "Schematics/KiCad/Downloaded Components" this should not be an issue as the files parts were set to be relative to the project (When pulling).
+3. In order to properly download the schematics and pcb one should download the .zip file "Project_Assignment3.zip" found in the root directory. The user then needs to unzip it and open the project on KiCad. If any errors are found then refer to "2." above or contact one of the team members for further assistance in opening correctly (All complications (that by chance arise) are due to the limited access to relavent software needed, but should execute smoothly as tested prior). 
 
 ## References
 
-schematic symbols and pcb foot prints were downloaded from ultralibrarian.com 
+extra schematic symbols and pcb foot prints were downloaded from ultralibrarian.com 
 The uHat board template and the J-header for the pi was downloaded from https://github.com/mikelawrence/RPi_Zero_pHat_Template
