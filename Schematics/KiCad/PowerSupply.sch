@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PiHAT_Power_Supply-rescue:R-Device R2
+L Device:R R2
 U 1 1 60B8698F
 P 6950 4200
 F 0 "R2" H 7020 4246 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "~" H 6950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PiHAT_Power_Supply-rescue:1N914-Diode D1
+L Diode:1N914 D1
 U 1 1 60B8E4ED
 P 4400 3800
 F 0 "D1" V 4354 3880 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4400 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PiHAT_Power_Supply-rescue:R-Device R1
+L pspice:R R1
 U 1 1 60B86505
 P 3150 4000
 F 0 "R1" H 3220 4046 50  0000 L CNN
@@ -50,25 +50,10 @@ Text GLabel 3150 4800 0    71   Input ~ 0
 PWM
 Text GLabel 1500 3750 0    71   Input ~ 0
 5V
-$Comp
-L PiHAT_Power_Supply-rescue:ADMP504ACEZ-RL-2021-06-02_12-37-56 Microphone1
-U 1 1 60B9E2AA
-P 7650 3250
-F 0 "Microphone1" H 8850 3637 60  0000 C CNN
-F 1 "ADMP504ACEZ-RL" H 8850 3531 60  0000 C CNN
-F 2 "PiHAT_Power_Supply:ADMP504ACEZ-RL" H 8850 3490 60  0001 C CNN
-F 3 "" H 7650 3250 60  0000 C CNN
-	1    7650 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 2900 7400 3250
 Wire Wire Line
-	7400 3250 7650 3250
-Wire Wire Line
-	10050 3450 10050 5500
-Wire Wire Line
-	10050 5500 6950 5500
+	10050 5500 7950 5500
 Wire Wire Line
 	4400 2900 4400 3650
 Wire Wire Line
@@ -85,14 +70,10 @@ Wire Wire Line
 Connection ~ 6950 5500
 Wire Wire Line
 	6950 5500 5800 5500
-Text GLabel 8350 4400 2    71   Input ~ 0
+Text GLabel 9850 2700 2    71   Input ~ 0
 Vmic
-Wire Wire Line
-	7650 3450 7650 4400
-Wire Wire Line
-	7650 4400 8350 4400
 $Comp
-L PiHAT_Power_Supply-rescue:GND-power #PWR0101
+L power:GND #PWR0101
 U 1 1 60BA54EE
 P 5100 5950
 F 0 "#PWR0101" H 5100 5700 50  0001 C CNN
@@ -115,7 +96,7 @@ Wire Wire Line
 	7400 2900 7400 2250
 Connection ~ 7400 2900
 $Comp
-L PiHAT_Power_Supply-rescue:FDW2503NZ-2021-06-02_13-00-23 NMOS1
+L 2021-06-02_13-00-23:FDW2503NZ NMOS1
 U 1 1 60BA8A9A
 P 3150 1100
 F 0 "NMOS1" V 3897 1328 60  0000 L CNN
@@ -140,7 +121,7 @@ Text Notes 8150 7650 0    71   ~ 0
 Text Notes 7200 6850 0    71   ~ 0
 Power supply: 5V-2V buck regulator\nUsed to drive microphone and op-amp.
 $Comp
-L PiHAT_Power_Supply-rescue:LMK107BBJ226MA-T-2021-06-02_13-25-42 C1
+L 2021-06-02_13-25-42:LMK107BBJ226MA-T C1
 U 1 1 60BB3CDF
 P 5800 4000
 F 0 "C1" V 5897 4104 60  0000 L CNN
@@ -151,7 +132,7 @@ F 3 "" H 5800 4000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PiHAT_Power_Supply-rescue:B82464A4474K000-2021-06-02_13-47-42 L1
+L 2021-06-02_13-47-42:B82464A4474K000 L1
 U 1 1 60BB6AF3
 P 4900 2900
 F 0 "L1" H 5200 3139 60  0000 C CNN
@@ -175,15 +156,40 @@ Connection ~ 6950 2900
 Wire Wire Line
 	6950 2900 7400 2900
 Wire Wire Line
-	2850 1100 2950 1100
-Wire Wire Line
-	2950 1100 3050 1100
-Connection ~ 2950 1100
-Connection ~ 3050 1100
-Wire Wire Line
-	3050 1100 3150 1100
-Wire Wire Line
 	3150 4150 3150 4800
 Wire Wire Line
 	1500 2900 1500 3750
+Wire Wire Line
+	2850 1100 3150 1100
+$Comp
+L new_microphone:ICS-40212 MIC?
+U 1 1 60C0CF1F
+P 9550 3150
+F 0 "MIC?" H 10350 3537 60  0000 C CNN
+F 1 "ICS-40212" H 10350 3431 60  0000 C CNN
+F 2 "ICS-40212_IVS" H 10350 3390 60  0001 C CNN
+F 3 "" H 9550 3150 60  0000 C CNN
+	1    9550 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3250 7950 3250
+Wire Wire Line
+	7950 3350 7950 5500
+Connection ~ 7950 5500
+Wire Wire Line
+	7950 5500 6950 5500
+Wire Wire Line
+	9550 3250 10050 3250
+Wire Wire Line
+	10050 3250 10050 3350
+Wire Wire Line
+	9550 3350 10050 3350
+Connection ~ 10050 3350
+Wire Wire Line
+	10050 3350 10050 5500
+Wire Wire Line
+	9550 3150 9550 2700
+Wire Wire Line
+	9550 2700 9850 2700
 $EndSCHEMATC
