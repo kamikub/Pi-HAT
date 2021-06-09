@@ -192,4 +192,8 @@ Wire Wire Line
 	9550 3150 9550 2700
 Wire Wire Line
 	9550 2700 9850 2700
+Text Notes 2100 1250 0    50   ~ 0
+MOSFET
+Text Notes 8600 2550 0    50   ~ 0
+Microphone
 $EndSCHEMATC
