@@ -1,0 +1,13 @@
+uHAT: Bill of Materials ,,,,
+,,,,
+Submodule:,Item,Quantity,Model Name,Cost
+Power supply,Resistor ,2,Any standard,R1.00
+,MOSFET,1,FDW2501NZ,R10.00
+,Capacitor,1,LMK107BBJ226MA_T,R8.00
+,Inductor,1,B82464A4474K000,R24.51
+,Microphone,1,ICS-40212,R30.00
+,Diode,1,1N914,R9.50
+,,,,
+LEDs/Buzzer:,,,,
+,,,,
+Op-amp:,,,,
