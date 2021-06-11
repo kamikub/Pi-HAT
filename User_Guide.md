@@ -12,5 +12,6 @@
 3. The PI Zero then powers the uPIHat.
 4. Do not turn the potentiometer on the amplifier submodule, it should remain in its preset
    position unless the user is using the amplifier for its second use case (vocal trainer).
-5. If the user is using the amplifier in its second use case then refer to the How-To 
+5. If the user is using the amplifier in its second use case then refer to the
+   Amplifier_How_To_Guide in the repository. 
 3. Select a frequency using one of the push buttons .........
