@@ -33,7 +33,7 @@ Each by default corresponds (by default) to the following frequencies:
 6: 329.63 Hz (E_4)
 
 
-User may alter this by altering "freq.txt"
+User may alter this by altering "software/freq.txt"
 
 ## Buzzer:
 On default the buzzer is set to go off when the desired frequency is reached, the user is able to turn this functionality off but altering the code provided (as per the instructions)
