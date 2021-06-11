@@ -12,11 +12,11 @@ The switches are pressed to select which frequency the user would like to tune t
 
 GPIO PIN HEADER (PCB TOP)
 
-1   4
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4
 
-2   5
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5
 
-3   6
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6
 
 
 Each by default corresponds (by default) to the following frequencies:
