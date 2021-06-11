@@ -10,17 +10,28 @@ Red- Pitch is too high
 
 The switches are pressed to select which frequency the user would like to tune to. They are arranged in the following arrangement:
 
+GPIO PIN HEADER (PCB TOP)
+
 1   4
+
 2   5
+
 3   6
+
 
 Each by default corresponds (by default) to the following frequencies:
 1: 82.41 Hz  (E_2)
+
 2: 110.00 Hz (A_2)
+
 3: 146.83 Hz (D_3)
+
 4: 196.00 Hz (G_3)
+
 5: 246.94 Hz (B_3)
+
 6: 329.63 Hz (E_4)
+
 
 User may alter this by altering "freq.txt"
 
