@@ -1,6 +1,6 @@
 ## PCB manufacturing guide for the frequency tuner
 
-## A link to the Bill of Materials can be found here: 
+A link to the Bill of Materials can be found here: https://gitlab.com/beanzille/pihat_group18/-/blob/main/BOM.md
 
 After the PCB was completely designed using KiCad the drill files and Gerber files were
 plotted and output from KiCad.
