@@ -1,17 +1,21 @@
 # Frequency Tuner Bill of Materials 
 
 ## Power Supply:
-- 1x 100 ohm resistor: R0.50  
-- 1x 200 ohm resistor: R0.50 
-- 1x MOSFET (FDW2501NZ): R10.00
+- 1x 100 ohm resistor:             R0.50  
+- 1x 200 ohm resistor:             R0.50 
+- 1x MOSFET (FDW2501NZ):           R10.00
 - 1x Capacitor (LMK107BBJ226MA_T): R8.00
-- 1x Inductor (B82464A4474K000): R24.00
-- 1x Microphone (ICS-40212): R30.00
-- 1x Diode (1N914): R9.50
+- 1x Inductor (B82464A4474K000):   R24.00
+- 1x Microphone (ICS-40212):       R30.00
+- 1x Diode (1N914):                R9.50
 
 ## LEDs/Buzzer:
 
 ## Op amp:
+- 2x 1000 ohm resistor:            R1.00
+- 4x 2200 ohm resistor:            R2.00
+- 1x potentiometer:                R27.77
+- 1x LM324N quad amplifier:        R67.11
 
 ## Subtotal: 
 
