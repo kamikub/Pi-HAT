@@ -1,4 +1,3 @@
-
 #setup the pins
 	#user selects if they want the buzzer on or off
 
@@ -17,3 +16,6 @@
 ##Thread 2
 #read buttons input
 		#if pressed interrupt thread one and restart
+
+
+#not the actual code but an estimation of how it goes
